@@ -1,0 +1,66 @@
+:root{
+    --radius: 2rem;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.calculator{
+    display: inline-block;
+    border-radius: var(--radius);
+    -webkit-border-radius: var(--radius);
+    -moz-border-radius: var(--radius);
+    -ms-border-radius: var(--radius);
+    -o-border-radius: var(--radius);
+    box-shadow: 3px 3px 10px #444444;
+}
+.calculator .screen {
+    background-color: red;
+    text-align: right;
+    padding: 1rem;
+    border-top-right-radius: var(--radius);
+    border-bottom-left-radius: var(--radius);
+    font-family: 'Orbitron' , sans-serif;
+
+}
+.calculator .screen .operations{
+    min-height: 30px;
+    min-width: 1.3rem;
+}
+.calculator .screen .result{
+    font-size: 3rem;
+}
+.calculator .keypad {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+}
+.calculator .keypad > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.calculator .keypad button{
+    border: 0;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #555555;
+    cursor: pointer;
+}
+.calculator .keypad > div :last-child >button:last-child{
+    background-color: red;
+    color: white;
+}
